@@ -15,15 +15,38 @@
 
 <body class="body">
   <header class="header">
-    <a href="#">
-      <div class="logo"></div>
-    </a>
+    <div class="cloud">
+      <a href="#" class="logo"></a>
+    </div>
     <div class="log-out">
       <span>Здравствуйте, Глеб!</span>
       <button class="button">Выход</button>
     </div>
   </header>
-  <main class="main"></main>
+
+  <main class="main">
+    <aside class="aside">
+      <div class="aside-name">Фильтрация:</div>
+      <form action="" class="filters">
+        <input type="text" placeholder="Имя автора">
+        <div class="date-filters">
+          <input type="date" placeholder="Дата от">
+          <input type="date" placeholder="Дата до">
+        </div>
+        <input type="text" placeholder="Текст твита">
+        <div class="hashtags">
+          <input type="text" placeholder="Хештеги">
+          <button class="add-hashtag"><i class="fas fa-plus"></i></button>
+        </div>
+        <div class="form-actions">
+          <button type="reset" class="reset button">Сбросить</button>
+          <button type="submit" class="button">Применить фильтры</button>
+        </div>
+      </form>
+    </aside>
+    <section class="board"></section>
+  </main>
+
   <footer class="footer">
     <span class="app-name">SkyBird v 1.0 от 22.02.2022</span>
     <div class="contacts">
