@@ -1,0 +1,98 @@
+:root {
+  --blue-dark: #3777c2;
+  --orange: #ffa665;
+  --blue: #72a5e0;
+  --blue-light1: #b7d8ff;
+  --blue-light2: #d3e7ff;
+  --blue-light3: #f6fcff;
+  --black: #383838;
+  --gray-dark: #676767;
+  --gray: #929292;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: "Open Sans", sans-serif;
+  vertical-align: baseline;
+  color: inherit;
+  box-sizing: border-box;
+  transition: all 0.5s;
+  cursor: default;
+}
+
+html {
+  font-size: 16px;
+  background-color: var(--blue-light3);
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button {
+  color: var(--white);
+  font-weight: 600;
+  padding: 0.4rem 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--blue);
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--blue-dark);
+}
+
+.body {
+  background: no-repeat top left/30% url("assets/cloud.svg");
+  display: grid;
+  grid-template-rows: 7rem auto 3rem;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  margin: 2rem 4rem;
+  background: no-repeat url("assets/logo.svg");
+  background-size: contain;
+  width: 14vw;
+  height: 6vw;
+}
+
+.log-out {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  color: var(--blue-dark);
+  margin-right: 2rem;
+}
+
+.footer {
+  background-color: var(--blue-light2);
+  color: var(--blue-dark);
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app-name {
+  font-weight: 600;
+}
+
+.contacts {
+  display: flex;
+  gap: 1rem;
+}
+
+.email:hover {
+  color: var(--black);
+}
