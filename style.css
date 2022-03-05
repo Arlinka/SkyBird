@@ -20,8 +20,11 @@
   vertical-align: baseline;
   color: inherit;
   box-sizing: border-box;
-  transition: all 0.5s;
   cursor: default;
+}
+
+*:hover {
+  transition: all 0.5s;
 }
 
 html {
@@ -31,20 +34,6 @@ html {
 
 a {
   text-decoration: none;
-  cursor: pointer;
-}
-
-.button {
-  color: var(--white);
-  font-weight: 600;
-  padding: 0.4rem 1rem;
-  border-radius: 0.5rem;
-  background-color: var(--blue);
-  cursor: pointer;
-}
-
-.button:hover {
-  background-color: var(--blue-dark);
 }
 
 .body {
@@ -57,6 +46,24 @@ a {
 .header {
   display: flex;
   justify-content: space-between;
+}
+
+.button {
+  color: var(--white);
+  font-weight: 600;
+  padding: 0.4rem 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--blue);
+}
+
+a,
+.button,
+.logo {
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--blue-dark);
 }
 
 .logo {
