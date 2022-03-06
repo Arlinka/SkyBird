@@ -76,7 +76,8 @@ textarea:focus::placeholder {
 a,
 .button,
 .logo,
-.submit-tweet {
+.submit-tweet,
+.tweet {
   cursor: pointer;
 }
 
