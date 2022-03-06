@@ -158,6 +158,7 @@ a,
 .form-actions {
   display: flex;
   gap: 0.5rem;
+  flex-direction: row;
 }
 
 .add-hashtag {
@@ -337,4 +338,25 @@ a,
 ::-webkit-scrollbar-thumb:hover,
 ::-webkit-scrollbar-thumb:active {
   background-color: var(--blue-dark);
+}
+
+/* ------- Responsive ------- */
+
+@media only screen and (max-width: 1300px),
+  only screen and (max-device-width: 1300px) {
+  .logo {
+    margin: 2vw 4vw;
+  }
+
+  .date-filters {
+    flex-direction: column;
+  }
+
+  .form-actions {
+    flex-direction: column-reverse;
+  }
+
+  .board {
+    padding: var(--header-height) 2rem 2rem;
+  }
 }
